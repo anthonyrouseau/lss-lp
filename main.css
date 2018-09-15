@@ -1,0 +1,95 @@
+html {
+  --primary-color: #b71c1c;
+  --dark-color: black;
+  --light-color: #f05545;
+  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #F0F0F0;
+}
+
+body {
+  font-family: 'Roboto';
+  font-size: 3vw;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100vh;
+  grid-row-gap: 30px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  height: 30vh;
+  color: white;
+  font-weight: bold;
+  background-color: #7f0000;
+  font-size: 7vw;
+}
+
+.content {
+  box-sizing: border-box;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.field {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.title {
+  border-top: 2px solid black;
+}
+
+.title h2 {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #F0F0F0;
+  box-shadow: var(--shadow);
+}
+
+.column {
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlights {
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.highlight {
+  margin-bottom: 15px;
+  flex-basis: 300px;
+  padding: 30px;
+  background-color: lightgray;
+  box-shadow: var(--shadow);
+  align-self: stretch;
+}
+
+.highlight h3 {
+  color: var(--primary-color);
+  box-shadow: var(--shadow);
+  background-color: #F0F0F0;
+}
+
+.shadow {
+  box-shadow: var(--shadow);
+}
