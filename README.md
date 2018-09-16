@@ -1,1 +1,1 @@
-# LoL Summoners Series Sign Up Page
+# LoL Summoner Series Sign Up Page
